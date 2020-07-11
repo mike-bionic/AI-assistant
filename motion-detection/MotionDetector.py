@@ -14,7 +14,7 @@ class MotionDetectorInstantaneous():
         self.show = showWindows #Either or not show the 2 windows
         self.frame = None
     
-        self.capture=cv.CaptureFromCAM(1)
+        self.capture=cv.CaptureFromCAM(0)
         self.frame = cv.QueryFrame(self.capture) #Take a frame to init recorder
         if doRecord:
             self.initRecorder()
